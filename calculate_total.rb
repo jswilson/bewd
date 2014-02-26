@@ -13,6 +13,9 @@ def calculate_total(order=[])
 end
 
 def calculate_total_var_args(*order)
+	# identical to above function, but takes in variable number of arguments
+	# though the code is identical, I couldn't make a single function work
+	# with both an array and a variable number of arguments
 	total = 0
    	for item in order
 		quantity = item[:quantity]
